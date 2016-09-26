@@ -4,7 +4,6 @@ var Cat = function(name, favFood, imageUrl){
   this.imageUrl = imageUrl
 }
 
-
 function app(){
   var cats = [
   new Cat("Boba","Sock Fluff", "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"),
@@ -14,16 +13,12 @@ function app(){
   ]
   
   for (var i = 0; i<cats.length; i++){
-    makeCatUl(cats[i].name, cats[i].favFood, cats[i].imageUrl, document.getElementById("cats"))
+    makeCatBoxes(cats[i].name, cats[i].favFood, cats[i].imageUrl, document.getElementById("cats"))
   }
- 
-
-
-  // var piddles = makeCatUl("derp", "derpSoup", "https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png", document.getElementById("cats"));
 }
 
 
-function makeCatUl(name, favFood, imageurl, parent){
+function makeCatBoxes(name, favFood, imageurl, parent){
   var name = makeNameLi(name);
   var favFood = makeFavFoodLi(favFood);
   var image = makeImage(imageurl);
