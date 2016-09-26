@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cat{
@@ -10,7 +11,15 @@
 }
 
 body{
-  background-color: #88ff99
+  background-color: #f99
+}
+
+img{
+  margin: 10px;
+}
+
+.cat:hover{
+  animation:disco 1s infinite;
 }
 
 .logo {
@@ -20,4 +29,40 @@ body{
 
 .red-quote{
   color: red;
+}
+
+@keyframes disco{
+  0% {
+    background:blue;
+  }
+  10% {
+    background:cyan;
+    }
+  20% {
+    background:green;
+  }
+  30% {
+    background:yellow;
+  }
+  40% {
+    background:orange;
+  }
+  50% {
+    background:red;
+  }
+  60% {
+    background:purple;
+  }
+  70% {
+    background:blue;
+  }
+  80% {
+    background:yellow;
+  }
+  90% {
+    background:white;
+  }
+  100% {
+    background:blue;
+  }
 }
