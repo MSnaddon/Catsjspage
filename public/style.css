@@ -1,11 +1,16 @@
 #cats{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .cat{
-  justify-content: flex-start;
-  
+  margin: 20px;
+  align-self: flex-start;
+}
+
+body{
+  background-color: #88ff99
 }
 
 .logo {

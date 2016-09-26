@@ -32,8 +32,12 @@ function makeCatUl(name, favFood, imageurl, parent){
   list.appendChild(name);
   list.appendChild(favFood);
 
-  parent.appendChild(list);
-  parent.appendChild(image)
+  var div = document.createElement("div")
+  div.classList.add("cat")
+
+  div.appendChild(list);
+  div.appendChild(image)
+  parent.appendChild(div)
 
 }
 
